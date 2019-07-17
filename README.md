@@ -28,3 +28,11 @@ Once we're updated to an officially released RavenDesk edition that'll simplify 
 The weirdest part currently is that we'll have to checkout a whole other git repo where the unreleased version of RavenDesk lives,
 and then use submodules to work on the BeerJS repo.
 This inconvinience is just temporary.
+
+## Deploy new version
+
+Once you have followed the steps above in the setup guid you can deploy a new version running:
+
+```
+yarn run deploy
+```
