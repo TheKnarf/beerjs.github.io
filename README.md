@@ -9,7 +9,7 @@ You can follow the setup process under to get started
 You'll need Node.js and Yarn for development.
 
 ```
-git clone -branch dev git@github.com:TheKnarf/theknarf.github.io.git
+git clone --branch dev git@github.com:TheKnarf/theknarf.github.io.git
 cd theknarf.github.io
 git submodule update --init --recursive
 yarn install
