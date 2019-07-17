@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "build": "ravendesk build",
-    "dev": "ravendesk dev"
+    "dev": "ravendesk dev",
+    "deploy": "yarn run build && gh-pages --dist dist --branch master"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "@ravendesk/cli": "./packages/ravendesk-cli",
-    "@ravendesk/preset-blog": "./packages/ravendesk-preset-blog"
+    "@ravendesk/preset-blog": "./packages/ravendesk-preset-blog",
+    "gh-pages": "^2.0.1"
   }
 }
