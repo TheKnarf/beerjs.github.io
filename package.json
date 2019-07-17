@@ -15,5 +15,8 @@
     "@ravendesk/cli": "./packages/ravendesk-cli",
     "@ravendesk/preset-blog": "./packages/ravendesk-preset-blog",
     "gh-pages": "^2.0.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1"
   }
 }
