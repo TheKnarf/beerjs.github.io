@@ -6,7 +6,7 @@ You can follow the setup process under to get started
 
 ## Development setup
 
-You'll need Node.js and Yarn for development.
+You'll need Node.js and Yarn for development. Be aware that you'll have to clone the repo in the description under:
 
 ```
 git clone --branch dev git@github.com:TheKnarf/theknarf.github.io.git
