@@ -8,8 +8,9 @@ import Header from './components/header';
 
 export default () => <Layout relativeLocation='..'>
 	<body>
-		<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+		<div class="cover-container w-100 h-100 p-3 mx-auto">
 			<Header relativeLocation='..' active={3} />
+			<br /> <br /> {/* todo: remove br hack */}
 			<h1>About page</h1>
 		</div>
 	</body>

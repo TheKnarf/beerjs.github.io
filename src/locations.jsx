@@ -26,8 +26,9 @@ const PreDump = ({ data }) => <pre>
 	
 export default () => <Layout>
 	<body>
-		<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+		<div class="cover-container w-100 h-100 p-3 mx-auto">
 			<Header relativeLocation='..' active={2} />
+			<br /> <br /> {/* todo: remove br hack */}
 			<h1>Locations</h1>
 			<p>You can find BeerJS in the current locations</p>
 			<PreDump data={locations} />
