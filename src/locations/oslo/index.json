@@ -1,0 +1,13 @@
+{
+	"name": "Oslo",
+	"country": "Norway",
+	"language": "no",
+	"address": "",
+	"description": "",
+	"github": "https://github.com/beerjs/oslo",
+	"sponsors": [
+		{
+			"name": "Finn.no"
+		}
+	]
+}
