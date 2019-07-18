@@ -2,7 +2,7 @@ import { dom } from 'isomorphic-jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './cover.css';
 
-const page = ({ children }) => '<!DOCTYPE html>' +
+export default ({ relativeLocation = '', children }) => '<!DOCTYPE html>' +
 	<html lang="en">
 		<head>
 			<meta charset="utf-8" />
@@ -11,9 +11,7 @@ const page = ({ children }) => '<!DOCTYPE html>' +
 
 			<title>BeerJS</title>
 
-			<link rel="stylesheet" href="main.css" />
+			<link rel="stylesheet" href={[ relativeLocation, 'main.css'].join('/')} />
 		</head>
 		{children}
 	</html>;
-
-export default page;
