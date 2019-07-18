@@ -6,7 +6,7 @@ import { dom } from 'isomorphic-jsx';
 import Layout from './components/layout';
 import Header from './components/header';
 
-export default () => <Layout>
+export default () => <Layout relativeLocation='..'>
 	<body>
 		<div class="cover-container w-100 h-100 p-3 mx-auto">
 			<Header relativeLocation='..' active={1} />

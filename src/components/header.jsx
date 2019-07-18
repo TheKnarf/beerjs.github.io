@@ -10,10 +10,10 @@ const NavLink = ({ active = false, href, children }) =>
 	active ? <a class="nav-link active" href={href}>{ children }</a>
 			 : <a class="nav-link" href={href}>{ children }</a>;
 
-export default ({ relativeLocation = '', active=0 }) => <header class="masthead mb-auto">
+export default ({ relativeLocation = '.', active=0 }) => <header class="masthead mb-auto">
 	<div class="inner">
 		<h3 class="masthead-brand">
-			<Logo style={{ height: '2em' }} />
+			<Logo style={{ height: '2em' }} relativeLocation={relativeLocation} />
 			<span>BeerJs</span>
 		</h3>
 		<Nav>

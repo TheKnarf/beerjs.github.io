@@ -24,7 +24,7 @@ const PreDump = ({ data }) => <pre>
 }
 </pre>;
 	
-export default () => <Layout>
+export default () => <Layout relativeLocation='..'>
 	<body>
 		<div class="cover-container w-100 h-100 p-3 mx-auto">
 			<Header relativeLocation='..' active={2} />
