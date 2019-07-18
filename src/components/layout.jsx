@@ -13,7 +13,7 @@ const page = ({ children }) => '<!DOCTYPE html>' +
 
 			<link rel="stylesheet" href="main.css" />
 		</head>
-		<body class="text-center">{children}</body>
+		{children}
 	</html>;
 
 export default page;

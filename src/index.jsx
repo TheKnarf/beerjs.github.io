@@ -5,6 +5,7 @@ route: index.html
 import { dom } from 'isomorphic-jsx';
 import Logo from './components/logo';
 import Layout from './components/layout';
+import coverImage from './assets/cover.jpeg';
 
 const Header = () => <header class="masthead mb-auto">
 	<div class="inner">
@@ -27,19 +28,25 @@ const Footer = () => <footer class="mastfoot mt-auto">
 </footer>;
 
 const page = () => <Layout>
-	<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-		<Header />
+	<body class="text-center" style={{
+		'background-image': `url(${coverImage})`,
+		'background-repeat': 'no-repeat',
+		'background-size': 'cover'
+	}}>
+		<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+			<Header />
 
-		<main role="main" class="inner cover">
-			<h1 class="cover-heading">Cover title</h1>
-			<p class="lead">Here goes some text about beerjs</p>
-			<p class="lead">
-				<a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-			</p>
-		</main>
+			<main role="main" class="inner cover">
+				<h1 class="cover-heading">Cover title</h1>
+				<p class="lead">Here goes some text about beerjs</p>
+				<p class="lead">
+					<a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+				</p>
+			</main>
 
-		<Footer />
-	</div>
+			<Footer />
+		</div>
+	</body>
 </Layout>;
 
 export default page;
