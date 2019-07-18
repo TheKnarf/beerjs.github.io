@@ -17,6 +17,7 @@ const Header = () => <header class="masthead mb-auto">
 			<a class="nav-link active" href="#">Home</a>
 			<a class="nav-link" href="blog/">Blog</a>
 			<a class="nav-link" href="locations/">Locations</a>
+			<a class="nav-link" href="about/">About</a>
 		</nav>
 	</div>
 </header>;
