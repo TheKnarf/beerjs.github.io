@@ -14,10 +14,10 @@ export default ({ relativeLocation = '.', active=0 }) => <header class="masthead
 	<div class="inner">
 		<h3 class="masthead-brand">
 			<Logo style={{ height: '2em' }} relativeLocation={relativeLocation} />
-			<span>BeerJs</span>
+			<span>BeerJS</span>
 		</h3>
 		<Nav>
-			<NavLink active={active == 0} href={[relativeLocation, "index.html"].join('/')}>Home</NavLink>
+			<NavLink active={active == 0} href={[relativeLocation, ""].join('/')}>Home</NavLink>
 			<NavLink active={active == 1} href={[relativeLocation, "blog/"].join('/')}>Blog</NavLink>
 			<NavLink active={active == 2} href={[relativeLocation, "locations/"].join('/')}>Locations</NavLink>
 			<NavLink active={active == 3} href={[relativeLocation, "about/"].join('/')}>About</NavLink>
